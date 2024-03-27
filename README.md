@@ -35,11 +35,11 @@ module.exports = {<br>
 
 ### Example View (views/todos/index.ejs)
 
-<ul><br>
+\<ul><br>
   <% todos.forEach(function(todo) { %><br>
-    <li><%= todo.todo %> - <%= todo.done ? 'Done' : 'Pending' %></li><br>
+    \<li><%= todo.todo %> - <%= todo.done ? 'Done' : 'Pending' %>\</li><br>
   <% }); %><br>
-</ul><br>
+\</ul><br>
 
     
 ### Example Controller (controllers/todos.js)
@@ -92,12 +92,13 @@ router.get('/:id', todosCtrl.show);<br>
 
 ### Linking to the Show Page (views/todos/index.ejs)
 
-<ul><br>
+\<ul><br>
   <% todos.forEach(function(todo) { %><br>
-    <li><a href="/todos/<%= todo.id %>"><%= todo.todo %></a></li><br>
+    \<li>\<a href="/todos/<%= todo.id %>"><%= todo.todo %></a></li><br>
   <% }); %><br>
-</ul><br>
+\</ul><br>
     
 ### Show View (views/todos/show.ejs)
-<h2><%= todo.todo %></h2><br>
-<p>Status: <%= todo.done ? 'Done' : 'Pending' %></p><br>
+
+\<h2><%= todo.todo %>\</h2><br>
+\<p>Status: <%= todo.done ? 'Done' : 'Pending' %>\</p><br>
